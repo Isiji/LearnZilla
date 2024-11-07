@@ -1,0 +1,101 @@
+/* Overall styling */
+.App {
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+/* Navbar styling */
+.navbar {
+  width: 100%;
+  margin:0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #1E90FF; /* Blue for the main header */
+  color: white;
+  flex-wrap: wrap;
+}
+
+.nav-logo {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  }
+
+.nav-links a {
+  margin: 0 15px;
+  color: white;
+  text-decoration: none;
+  font-size: 1em;
+  transition: color 0.3s ease;
+  padding: 5px 0;
+
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+/* Welcome section */
+.welcome-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #F5F5F5; /* Light gray for the background */
+  color: #333;
+  padding: 40px 20px;
+}
+
+.welcome-section h1 {
+  color: #32CD32; /* Green to reflect growth and learning */
+  font-size: 2.5em;
+}
+
+.welcome-section p {
+  color: #333;
+  font-size: 1.2em;
+  margin-top: 10px;
+}
+
+.cta-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1em;
+  color: #FFD700; /* Yellow for a pop of energy */
+  background-color: #1E90FF; /* Blue button for consistency */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #32CD32; /* Green on hover for an interactive feel */
+  color: white;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .nav-links {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+  }
+  .welcome-section h1 {
+    font-size: 2em;
+  }
+  .welcome-section p {
+    font-size: 1em;
+  }
+}
