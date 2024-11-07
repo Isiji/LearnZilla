@@ -9,11 +9,13 @@
   .background-image {
     background-image: url('assets/images/bg.jpg');
     background-size: cover;
-    background-position: center;
+    background-position: center center;
+    background-attachment: fixed;
+    height: 100vh;
     position: relative;
-    height: 60vh;
   }
   
+  /* Overlay effect */
   .overlay {
     position: absolute;
     top: 0;
@@ -23,6 +25,7 @@
     background: rgba(0, 0, 0, 0.5);
   }
   
+  /* Content styling in the header */
   .content {
     position: absolute;
     top: 50%;
@@ -30,6 +33,16 @@
     transform: translate(-50%, -50%);
     color: white;
     text-align: center;
+    z-index: 2; /* Make sure it's above the background */
+  }
+  
+  /* Mission & Vision Section */
+  .mission-vision {
+    margin-top: 60px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
   
   .mission-vision h1, .mission-vision h2 {
@@ -41,8 +54,10 @@
     font-size: 1.2em;
     max-width: 800px;
     margin: 0 auto;
+    line-height: 1.5;
   }
   
+  /* Auth Section */
   .auth-section {
     margin-top: 20px;
   }
@@ -62,7 +77,47 @@
     background-color: #32CD32;
   }
   
-  /* Photo Section */
+  /* Testimonials Section */
+  .testimonials-section {
+    margin: 40px 20px;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .testimonials-section h2 {
+    font-size: 2em;
+    color: #1E90FF;
+    margin-bottom: 30px;
+  }
+  
+  .testimonial-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  
+  .testimonial-box {
+    width: 250px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .testimonial-box p {
+    font-size: 1em;
+    color: #555;
+  }
+  
+  .testimonial-box h3 {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #1E90FF;
+    margin-top: 10px;
+  }
+  
+  /* Photos Section */
   .photo-section {
     display: flex;
     justify-content: center;
