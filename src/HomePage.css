@@ -1,0 +1,133 @@
+/* General homepage styling */
+.homepage {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    min-height: 100vh;
+  }
+  
+  /* Background with blur */
+  .background-image {
+    background-image: url('assets/images/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 60vh;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  
+  .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+  }
+  
+  .mission-vision h1, .mission-vision h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+  
+  .mission-vision p {
+    font-size: 1.2em;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .auth-section {
+    margin-top: 20px;
+  }
+  
+  .cta-button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #1E90FF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .cta-button:hover {
+    background-color: #32CD32;
+  }
+  
+  /* Photo Section */
+  .photo-section {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+  }
+  
+  .photo-container {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .round-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  /* Benefits Section */
+  .benefits-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 40px 20px;
+  }
+  
+  .benefits-heading {
+    width: 100%;
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 30px;
+    color: #1E90FF;
+  }
+  
+  .benefit-container {
+    width: 250px;
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+  
+  .benefit-container h3 {
+    font-size: 1.5em;
+    color: #32CD32;
+  }
+  
+  .benefit-container p {
+    font-size: 1em;
+    color: #555;
+  }
+  
+  /* Responsive styling */
+  @media (max-width: 768px) {
+    .content {
+      font-size: 1.5em;
+    }
+    .benefits-section {
+      flex-direction: column;
+      align-items: center;
+    }
+    .benefit-container {
+      width: 80%;
+    }
+  }
+  

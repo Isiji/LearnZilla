@@ -1,20 +1,16 @@
+import React from 'react';
 import './App.css';
+import Navbar from './Navbar'; // Import Navbar component
+import HomePage from './HomePage';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <nav className="navbar">
-          <a className="nav-logo" href="/">Learnzilla</a>
-          <div className="nav-links">
-            <a href="#features">Features</a>
-            <a href="#about">About Us</a>
-            <a href="#contact">Contact</a>
-          </div>
-        </nav>
+        <Navbar />  {/* Use Navbar component here */}
         <div className="welcome-section">
-          <h1>Welcome to Learnzilla</h1>
-          <p>Empowering students, teachers, and parents in one platform. Learn together, grow together.</p>
+          <HomePage />
+          {/* Add a button to get started */}
           <button className="cta-button">Get Started</button>
         </div>
       </header>

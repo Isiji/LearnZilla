@@ -5,40 +5,9 @@
 }
 
 /* Navbar styling */
-.navbar {
-  width: 100%;
-  margin:0 auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-  background-color: #1E90FF; /* Blue for the main header */
-  color: white;
-  flex-wrap: wrap;
-}
 
-.nav-logo {
-  font-size: 1.5em;
-  font-weight: bold;
-  color: white;
-  text-decoration: none;
-}
 
-.nav-links {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  }
 
-.nav-links a {
-  margin: 0 15px;
-  color: white;
-  text-decoration: none;
-  font-size: 1em;
-  transition: color 0.3s ease;
-  padding: 5px 0;
-
-}
 
 .nav-links a:hover {
   text-decoration: underline;
